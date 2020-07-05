@@ -1,5 +1,10 @@
 .navbar-custom {
     background-color: rgb(0, 29, 74);
+    padding: 1em;
+}
+
+#profile-img {
+    margin-top: 5em;
 }
 
 .brand-custom {
@@ -7,12 +12,27 @@
     padding: 1em;
 }
 
-.content {
-    margin: 1em auto;
+.project-imgs {
+    width: 200px;
+    height: 200px;
+    /* You can set the dimensions to whatever you want */
+    object-fit: scale-down;
+}
+
+body {
+    padding-bottom: 5em;
 }
 
 .custom-footer {
     background-color: rgb(0, 29, 74);
+}
+
+img {
+    margin-top: 1em;
+}
+
+a {
+    color: white;
 }
 
 h1,
@@ -29,4 +49,8 @@ body {
 p {
     margin-top: 0.5em;
     color: #080708;
+}
+
+.icons {
+    color: unset
 }

@@ -7,34 +7,34 @@
 </head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-custom">
-            <!-- Brand -->
-            <a class="navbar-brand brand-custom" href="#">Mohamad Abou Harb</a>
 
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <a class="navbar-brand" href="#">Mohamad Abou Harb</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="color: white"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./assets/MY_CV.pdf" target='_blank'>CV <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link brand-custom" href="#">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link brand-custom" href="#">Contact Me</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
     <div class='container-fluid'>
         <div class='text-center'>
-            <img src="./img/square.jpg" alt="profile picture" class="rounded-circle" width='200px'>
+            <img src="./assets/img/square-min.jpg" alt="profile picture" id="profile-img" class="rounded-circle" width='200px'>
+        </div>
+        <div class="row">
+            <div class='col-md-8 offset-md-2'>
+
+                <a class='icons' href="https://github.com/TwoShock"><i class="fa fa-3x fa-github" aria-hidden="true"></i></a>
+                <a class='icons' href="https://www.linkedin.com/in/mohabouharb/"><i class="fa fa-3x fa-linkedin"></i></a>
+            </div>
         </div>
         <div class='row'>
             <div class='col-md-8 offset-md-2'>
@@ -43,15 +43,59 @@
                 <hr>
                 <p>I am a third year Computer and Communications Engineering student at the American University of Beirut. I have been coding since i was 15 years old. My area of interest is mainly A.I and Machine Learning.
                 </p>
-                <h2>Projects</h2>
+                <h2>Game Projects</h2>
                 <hr>
-                <h3>Minesweeper</h3>
-                <h3>FST</h3>
-                <h3>Tic Tac Toe</h3>
+                <div class="row">
+                    <div class='col-lg-6 col-lg-pull-9'>
+                        <h3 class='text-center'>Minesweeper</h3>
+                        <div class="text-center">
+                            <img class="project-imgs" src="./assets/img/minesweeper-min.png" width='100%' alt="minesweeper image">
+                        </div>
+
+                        <p>This is a cool minesweeper clone I developed between classes in the summer of 2019 using javafx. It has three game board sizes: 8x8,16x16, and 32x32. Moreover, It has a useful help menu which teaches a new user how to play the
+                            game.
+                        </p>
+                    </div>
+
+                    <div class='col-lg-6 col-lg-pull-9'>
+                        <h3 class='text-center'>Tic Tac Toe</h3>
+                        <div class="text-center">
+                            <img class="project-imgs" src="./assets/img/tictactoe-min.png" width='100%' alt="tic tac toe image">
+                        </div>
+
+                        <p>I wanted to implement the min-max algorithm so I decided to make a player vs computer version of Tic Tac Toe. This was done using javafx.</p>
+                    </div>
+
+                </div>
+                <div class='col-lg-8 offset-md-2 col-lg-pull-9'>
+                    <h3 class='text-center'>Pong</h3>
+                    <div class="text-center">
+                        <img src="./assets/img/pong-min.png" width='100%' alt="fst image">
+                    </div>
+
+                    <p>This was a quick pong game I made in the unity engine when I was in my village with no internet connection.</p>
+                </div>
+
+                <h2>Machine Learning and Research</h2>
+                <hr>
+
+                <h3>Heart rate detection</h3>
+                <p>I was working as a research assistant for Dr. Zaher Dawy and we were tasked to develop a heart rate detection script that used video footage of a person to determine their heartrate. We were able to come up with a working prototype that
+                    was accurate up to 5bpm. The process we followed can be seen in the image below:</p>
+                <img src="./assets/img/heartrate.png" width='100%' alt="flow diagram">
+
+                <h3>Crime analysis and NLP</h3>
+                <p>During the summer of my 3rd year I was interning with Prof. Bocar Ba on a project related to analyzing crime data. During this internship I had a variety of tasks to complete.</p>
+                <p>My main task revolved around curating data from various websites and then performing topic modeling(LDA) on the text data to extract the relevant topics in the text. I then performed unsupervised sentiment analysis on the topics to be
+                    able to graph the variation in sentiment by topic over time.</p>
+                <p>
+                    Finally, I was tasked to refactor a 2 year old custom crime preprocessing library. I updated the library to the latest python versions and fixed all errors along the way. I then modularized the code in order to make the package pip friendly and wrote
+                    a plethora of test cases.
+                </p>
             </div>
         </div>
 
-        <footer class="page-footer fixed-bottom font-small custom-footer">
+        <footer class="page-footer font-small custom-footer fixed-bottom">
             <div class="footer-copyright text-center py-3">
                 <span style='color:white'>© 2020 Copyright : Mohamad Abou Harb</span>
             </div>
